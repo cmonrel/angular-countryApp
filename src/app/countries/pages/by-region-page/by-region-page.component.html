@@ -6,7 +6,7 @@
     <!-- SearchBox -->
     <button *ngFor="let region of regions"
       class="btn mx-2"
-      [value]="initialRegion"
+      [value]="selectedRegion"
       [ngClass]="{'btn-outline-primary': selectedRegion === region}"
       (click)="searchByRegion(region)"
     > {{region}} </button>
